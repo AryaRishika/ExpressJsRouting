@@ -1,0 +1,8 @@
+npm init:package json
+sudo npm install express :node modules
+.gitignore:js file
+public_static folder: for all ui
+         index.html
+
+
+/********** Now start *******************/
