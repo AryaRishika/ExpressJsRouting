@@ -1,8 +1,2 @@
-npm init:package json
-sudo npm install express :node modules
-.gitignore:js file
-public_static folder: for all ui
-         index.html
-
-
-/********** Now start *******************/
+Upload your File and then run show_list or add.
+File data format: eg {"task1":"Porfolio"},{"task2":"Calculator"}
