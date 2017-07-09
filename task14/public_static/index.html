@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            display:inline-block;
+            height:300px;
+            width:40%;
+            background-color: linen;
+        }
+    </style>
+</head>
+<body>
+<button id="show">Show Database</button>
+
+<hr>
+
+<p>Insert a query</p>
+<input type="text" id="task" placeholder="Task_name">
+<input type="text" id="status" placeholder="Status">
+<button id="insert">Insert</button>
+
+<hr>
+
+<p>Delete a query</p>
+<input type="text" id="delq" placeholder="Id">
+<button id="delete">Delete</button>
+
+<hr>
+
+<p>Update a query</p>
+<input type="text" id="up_id" placeholder="Id">
+<input type="text" id="up_s" placeholder="Status">
+<button id="update">Update</button>
+
+<hr>
+
+<p><b>RESULT</b></p>
+<div class="box">
+
+</div>
+<script src="jquery-cdn.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
