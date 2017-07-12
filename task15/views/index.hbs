@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<!--<script id="address-template" type="text/x-handlebars-template">-->
+    <!--<p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>-->
+<!--</script>-->
+
+{{todo}}
+<hr>
+
+<p>Show_Database</p>
+<form action="http://localhost:5000/todos/all" method="get">
+    <input type="submit">
+</form>
+
+<hr>
+<hr>
+
+
+<p>Update</p>
+<form action="http://localhost:5000/todos/update"
+        method="post">
+    <input type="text" name="id" placeholder="ID">
+    <input type="text" name="done" placeholder="Done">
+    <input type="submit">
+</form>
+
+<hr><hr>
+
+<p>Insert</p>
+<form action="http://localhost:5000/todos/insert"
+      method="post">
+    <input type="text" name="task" placeholder="Task">
+    <input type="text" name="done" placeholder="Done">
+    <input type="submit">
+</form>
+
+
+<hr><hr>
+<p>Delete</p>
+<form action="http://localhost:5000/todos/delete"
+      method="post">
+    <input type="text" name="id" placeholder="ID">
+    <input type="submit">
+</form>
+<hr><hr>
+
+        {{#each data}}
+<p>{{task}} :: {{done}}</p>
+        {{/each}}
+<script src="jquery-cdn.js"></script>
+</body>
+</html>
